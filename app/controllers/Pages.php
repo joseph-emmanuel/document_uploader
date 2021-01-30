@@ -1,12 +1,17 @@
 <?php
-class Pages extends Controller {
-    public function __construct() {
-        //$this->userModel = $this->model('User');
+class Pages extends Controller
+{
+    public function __construct()
+    {
+        $this->userModel = $this->model('User');
     }
 
-    public function index() {
+    public function index()
+    {
+        $users=$this->userModel->getUsers();
         $data = [
-            'title' => 'Home page'
+            'title' => 'Home page',
+            'users'=>$users
         ];
 
         $this->view('index', $data);
