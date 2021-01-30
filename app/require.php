@@ -1,9 +1,10 @@
 <?php
-    
-    require_once 'libraries/Core.php';//Required Core file from folder libraries
-    require_once 'libraries/Controller.php';//Required controller file from folder libraries
-    require_once 'libraries/Database.php';//Required database file from folder libraries
+    //Require libraries from folder libraries
+    require_once 'libraries/Core.php';
+    require_once 'libraries/Controller.php';
+    require_once 'libraries/Database.php';
 
-    //instantiate core class
+    require_once 'config/config.php';
 
-    $init=new Core();
+    //Instantiate core class
+    $init = new Core();
