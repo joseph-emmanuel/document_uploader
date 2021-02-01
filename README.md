@@ -3,8 +3,8 @@ A big part of what we do at DiliTrust is to securely store highly confidential d
 Deliverables:
 
 •	A fully functional online demo, with a minimal set of features among: 
-o	Login
-o	Logout
+#	Login
+#	Logout
 o	Sign-up
 o	User management
 o	User rights management
