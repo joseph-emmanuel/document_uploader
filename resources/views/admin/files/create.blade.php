@@ -73,7 +73,7 @@
                 var roleId = Number(Id);
                 console.log(roleId);
 console.log(totalCount);
-                if (totalCount > 5 && roleId == 5) {
+                if (totalCount > 5) {
                     alert("your upload limit is 5 files."
                             );
                     $('.file-upload').each(function () {
