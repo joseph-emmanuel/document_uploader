@@ -33,6 +33,7 @@
                         'data-filekey' => 'filename',
                         'id' => 'my_id'
                         ]) !!}
+                    <p style="color:red;font-size:14px;"> <b>Maximum file size is 7 mb </b></p>
                     <p class="help-block"></p>
                     <div class="photo-block">
                         <div class="progress-bar form-group">&nbsp;</div>
@@ -72,9 +73,9 @@
                 var roleId = Number(Id);
                 console.log(roleId);
 console.log(totalCount);
-                if (totalCount > 5 && roleId == 2) {
-                    alert("your upload limit is 5 files." +
-                            "Upgrade to Premium and upload as many files you want");
+                if (totalCount > 5 && roleId == 5) {
+                    alert("your upload limit is 5 files."
+                            );
                     $('.file-upload').each(function () {
                         var $this = $(this);
 
@@ -95,6 +96,15 @@ console.log(totalCount);
                     });
                     document.getElementById("submitBtn").classList.add('disabled');
                 }
+
+
+
+
+
+
+
+
+                
             });
 
             $('.file-upload').each(function () {

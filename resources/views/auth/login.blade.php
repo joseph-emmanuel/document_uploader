@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2" style="background-image: url('https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80');">
         <div class="panel panel-default">
-            <div class="panel-heading">{{ ucfirst(config('app.name')) }} @lang('quickadmin.qa_login')</div>
+            <div class="panel-heading">Joseph's File Uploader</div>
             <div class="panel-body">
                 @if (count($errors) > 0)
                 <div class="alert alert-danger">
@@ -51,7 +51,7 @@
                         <div class="col-md-6 col-md-offset-4">
                             <a href="{{ route('auth.password.reset') }}">@lang('quickadmin.qa_forgot_password')</a>
                             <br>
-                            <a href="{{ route('auth.register') }}">@lang('quickadmin.qa_registration')</a>
+                            <!-- <a href="{{ route('auth.register') }}">@lang('quickadmin.qa_registration')</a> -->
                         </div>
                     </div>
 

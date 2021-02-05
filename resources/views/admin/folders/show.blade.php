@@ -6,7 +6,7 @@
 
         @if (Auth::getUser()->role_id == 2 && $userFilesCount > 5)
             <a href="{{url('admin/files/create?folder_id=' . $folder->id)}}" class="btn btn-success disabled">Add file to this Folder</a>
-            <a href="{{url('/admin/subscriptions')}}" class="btn btn-primary">Upgrade plan to Premium for $9.99/month</a>
+            <!-- <a href="{{url('/admin/subscriptions')}}" class="btn btn-primary">Upgrade plan to Premium for $9.99/month</a> -->
         @else
             <a href="{{url('admin/files/create?folder_id=' . $folder->id)}}" class="btn btn-success">Add New File to this Folder</a>
         @endif
